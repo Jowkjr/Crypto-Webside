@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  /* height: 250vh; */
+  font-family: "roboto";
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+
+  background: royalblue;
+  border: 2px solid black;
+}
+
+.nav__logo {
+  width: 100px;
+}
+
+.nav__name-company {
+  font-size: bold;
+  color: rgb(239, 235, 235);
+  /* opacity: 0.9; */
+}
+
+.nav__news {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav__title {
+  font-size: 1.5rem;
+  color: rgb(242, 234, 234);
+  /* opacity: 0.8; */
+  margin: 5%;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.nav__title:hover {
+  /* background-color: rgba(231, 252, 250, 0.5); */
+  color: black;
+}
+
+.nav__search {
+  height: 50px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.nav__search:hover,
+.fa-solid:hover {
+  opacity: 0.6;
+}
+
+.mid__title {
+  text-align: center;
+  width: 100%;
+  padding: 2% 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.mid__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-height: 80%;
+  width: 60%;
+}
+
+/* .mid_articule {
+  max-height: 100%;
+} */
+
+/* .mid__articule-title {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 1% 0;
+  cursor: pointer;
+} */
+
+.mid__articule-text {
+  margin: 2% 5%;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.mid__another-ariticule {
+  margin: 2%;
+  background-color: #fff;
+}
+
+.mid__author {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5%;
+}
+
+.copyright {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: #253136;
+  /* margin-top: 2%; */
+}
+
+.copyright__text {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dark Mode */
+
+.fa-solid {
+  position: absolute;
+  font-size: 2vh;
+  right: 2%;
+}
+
+.fa-sun {
+  display: none;
+}
+
+.activeMode {
+  color: #00ff7b;
+  background: #121212;
+}

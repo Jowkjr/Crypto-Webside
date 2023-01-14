@@ -1,0 +1,442 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  /* height: 250vh; */
+  font-family: "roboto";
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: royalblue;
+  border: 2px solid black;
+}
+
+.nav__logo {
+  width: 4vw;
+}
+
+.nav__name-company {
+  font-size: bold;
+  color: rgb(239, 235, 235);
+  /* opacity: 0.9; */
+}
+
+.nav__news {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+}
+
+.nav__title {
+  font-size: 1.5rem;
+  color: rgb(242, 234, 234);
+  /* opacity: 0.8; */
+  margin: 5%;
+  /* margin-left: 10%; */
+  /* text-align: center; */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.nav__title:hover {
+  color: orange;
+}
+
+.nav__search {
+  height: 50px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.nav__search:hover,
+.fa-solid:hover {
+  opacity: 0.6;
+}
+.main__title {
+  width: 100%;
+  text-align: center;
+  margin: 2% 0;
+  padding: 1%;
+}
+
+.main__btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1% 2%;
+  font-family: "roboto";
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main__portfolio {
+  margin: 0 auto;
+  width: 50vw;
+  height: 70vh;
+  border: 2px solid #253136;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.mian__result-portofilio {
+  width: 100%;
+  height: 5vh;
+  background-color: #253136;
+}
+
+.main__list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20%;
+  /* margin: 0 5%; */
+  justify-content: center;
+  color: rgb(242, 234, 234);
+}
+
+.main__list-item {
+  display: flex;
+  align-self: center;
+  /* font-size: 1rem; */
+  font-weight: bold;
+}
+
+.total-balance,
+.portfolio-change,
+.total-profit-loss {
+  margin-left: 0.5rem;
+}
+
+.copyright {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: #253136;
+  margin-top: 2%;
+}
+
+.copyright__text {
+  position: absolute;
+  color: white;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  filter: blur(0.5rem);
+}
+
+.form {
+  display: none;
+}
+
+.formCoin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 60vh;
+  /* background-color: #253136; */
+  background-color: #1669e1;
+  border: 3px solid #253136;
+  /* z-index: 99; */
+}
+
+.formCoin__title {
+  color: rgb(242, 234, 234);
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  margin: 2%;
+}
+
+.mid__search-input {
+  height: 3vh;
+  width: 14vw;
+  font-size: 120%;
+  margin-bottom: 1vh;
+}
+
+.fa-solid {
+  position: absolute;
+  font-size: 2vh;
+  right: 2%;
+  /* color: white; */
+  /* color: gray; */
+}
+
+.fa-xmark {
+  margin: 1% 0;
+  font-size: 1.5rem;
+}
+
+.fa-xmark:hover {
+  opacity: 0.2;
+  /* color: white; */
+}
+
+.list {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  /* width: 50%; */
+  /* background-color: red; */
+  height: 78%;
+  width: 26%;
+  bottom: 2%;
+  /* display: none; */
+  overflow: hidden;
+  /* background-color: white; */
+}
+
+.list__item {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  list-style-type: none;
+  display: flex;
+  padding: 0.5rem;
+  gap: 5%;
+}
+
+.list__item:hover {
+  background-color: rgb(0, 57, 242);
+  cursor: pointer;
+  color: white;
+}
+
+.list__img {
+  width: 3rem;
+  height: 3rem;
+  /* margin: 0 1% 0; */
+  /* margin-right: 2% 0 2% 1%; */
+  /* background-color: pink; */
+}
+
+.list__name,
+.list__id {
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 2%;
+  /* background-color: yellow; */
+}
+
+.content__portfolio {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-content: center;
+  align-items: center;
+  /* justify-content: center; */
+  width: 30vw;
+  height: 35vw;
+  background-color: #253136;
+  z-index: 1;
+  display: none;
+}
+
+.close-content {
+  position: absolute;
+  right: 0;
+  margin: 1%;
+  font-size: 2rem;
+  color: rgb(239, 235, 235);
+  transition: 0.2s;
+}
+
+/* .close-content:hover {
+  color: rgb(255, 255, 255);
+} */
+
+.content__title {
+  display: flex;
+  gap: 10px;
+  color: rgb(242, 234, 234);
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1%;
+  padding: 1%;
+}
+
+.content_list {
+  display: flex;
+  margin: 2%;
+  gap: 20vw;
+  list-style-type: none;
+  /* margin: 0 50%; */
+}
+
+.content_item {
+  text-decoration: none;
+  /* margin: 0 10%; */
+  font-size: 2rem;
+  color: rgb(242, 234, 234);
+}
+
+.open {
+  text-decoration-line: underline;
+  text-decoration-color: orange;
+}
+
+.content__reckoning {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  align-items: center;
+  /* gap: 3vh; */
+}
+
+.p {
+  font-size: 1.5rem;
+  color: rgb(242, 234, 234);
+}
+.content__currency {
+  margin: 5%;
+}
+.content-select {
+  padding: 5%;
+  margin: 10% 0;
+}
+
+.content-input {
+  font-size: 1.5vw;
+}
+
+.content__quality {
+  margin: 15%;
+}
+
+.content__submit {
+  margin-top: 5vh;
+  padding: 1rem 3rem;
+}
+
+.specifications {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  gap: 5vw;
+  background-color: #1669e1;
+  list-style-type: none;
+}
+
+.specifications__item {
+  font-size: 1.2rem;
+  margin: 1% 2%;
+  color: rgb(242, 234, 234);
+}
+
+.mid__coins {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.mid__crypto,
+.mid__crypto-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+  /* flex-direction: row; */
+  /* gap: 1%; */
+  /* margin: 2% 0; */
+  /* width: 100%; */
+  /* height: 10%; */
+  /* flex-wrap: wrap; */
+}
+
+.mid__icon {
+  /* margin-left: 2%; */
+  width: 80px;
+  height: 80px;
+}
+
+.mid__crypto-name {
+  font-size: 1.5rem;
+  width: 100%;
+  /* margin-right: 10%; */
+}
+
+.mid__shortcut {
+  width: 10%;
+}
+
+.mid__crypto-price,
+.mid__crypto-worth {
+  font-size: 1.5rem;
+  /* width: 5%; */
+  margin-right: 10%;
+}
+
+.mid__percent {
+  font-size: 1.5rem;
+  /* width: 5%; */
+  /* margin: 0 3%; */
+}
+
+/* .remove-crypto {
+  /* margin-right: 2%; */
+/* }  */
+
+/* Dark Mode */
+
+.fa-sun {
+  display: none;
+}
+
+.activeMode {
+  color: #00ff7b;
+  background: #121212;
+}
+/* Media Queries */
+
+/* 1920x1080 */
+
+@media screen and (max-width: 1920px) {
+  .specifications__item {
+    margin: 1% 2%;
+  }
+
+  .formCoin {
+    width: 50vw;
+    height: 75vh;
+  }
+
+  .content__portfolio {
+    width: 30vw;
+    height: 80vh;
+  }
+}
+
+/* @media screen and (max-width: 1600px) {
+  .content__portfolio {
+    width: 30vw;
+    height: 80vh;
+  }
+} */

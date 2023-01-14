@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Ćwiczenia BEM/css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/ea0df8c89b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/Ćwiczenia BEM/Portfolio/portfolio.css" />
+
+    <title>Bem</title>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <nav class="nav">
+        <img
+          class="nav__logo"
+          src="/Ćwiczenia BEM/images/logo.png"
+          alt="bitcoin logo"
+        />
+        <h1 class="nav__name-company">Crypto News</h1>
+
+        <div class="nav__news">
+          <a href="/Ćwiczenia BEM/index.html" class="nav__title" id="news"
+            >Home
+          </a>
+          <a href="articule-all..html" class="nav__title" id="news">News </a>
+          <a
+            href="/Ćwiczenia BEM/Market/market.html"
+            class="nav__title"
+            id="news"
+            >Market Price
+          </a>
+          <a href="Portfolio/portfolio.html" class="nav__title" id="news"
+            >Portfolio</a
+          >
+        </div>
+        <i id="nav__mode" class="fa-solid fa-moon"></i>
+        <i id="nav__mode" class="fa-solid fa-sun"></i>
+      </nav>
+
+      <main class="main">
+        <h1 class="main__title">Confing Your Portfolio</h1>
+        <button class="main__btn" id="btn-add">Add Coin</button>
+        <div class="main__portfolio">
+          <div class="mian__result-portofilio">
+            <ul class="main__list">
+              <li class="main__list-item">
+                Total Balance:
+                <span class="total-balance" id="total-balance">0</span>
+              </li>
+              <li class="main__list-item">
+                24h Portfolio Change: <span class="portfolio-change">24%</span>
+              </li>
+              <li class="main__list-item">
+                Total Profit Loss: <span class="total-profit-loss">2900$</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="specifications">
+            <li class="specifications__item">Coin</li>
+            <li class="specifications__item">Name</li>
+            <li class="specifications__item">Id</li>
+            <li class="specifications__item">Price</li>
+            <li class="specifications__item">Amount</li>
+            <li class="specifications__item">Usd</li>
+          </ul>
+          <div class="mid__coins" id="all-crypto"></div>
+        </div>
+      </main>
+
+      <footer class="copyright">
+        <span class="copyright__text"
+          >Terms of services and Privacy policy © Crypto News 2016 - 2022</span
+        >
+      </footer>
+    </div>
+    <div class="form" id="form">
+      <div class="formCoin">
+        <h1 class="formCoin__title">Choice your coin!</h1>
+        <label class="mid__search"
+          ><input
+            class="mid__search-input"
+            id="search-crypto"
+            type="text"
+            placeholder="search"
+        /></label>
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <ul class="list" id="list"></ul>
+      </div>
+    </div>
+    <div class="content__portfolio" id="content">
+      <i class="fa-solid fa-xmark close-content" id="close-content"></i>
+      <h1 class="content__title" id="content-title">
+        Add transaction to your portfoilo
+      </h1>
+      <li class="content_list">
+        <a href="#" class="content_item buy open" id="buy">Buy</a>
+        <a href="#" class="content_item sell" id="sell">Sell</a>
+      </li>
+      <form class="content__reckoning">
+        <p class="content__currency p">Currency</p>
+        <select class="content-select fiat" name="" id="">
+          <option value="">USD</option>
+          <input
+            class="content-input fiat-number"
+            type="number"
+            id="crypto-value"
+          />
+        </select>
+        <p class="content__quality p">Quality</p>
+        <input
+          class="content-input quality-number"
+          type="number"
+          id="quality-value"
+        />
+        <!-- <input
+          type="submit"
+          value="Add"
+          class="content__submit"
+          id="submit-input"
+        /> -->
+        <button class="content__submit" id="submit-input">Add</button>
+      </form>
+    </div>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
+<!-- <script src="https://kit.fontawesome.com/ea0df8c89b.js" crossorigin="anonymous"></script> -->

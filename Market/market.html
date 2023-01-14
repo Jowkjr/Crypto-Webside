@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Ćwiczenia BEM/css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/ea0df8c89b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="market.css" />
+
+    <title>Bem</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <img
+          class="nav__logo"
+          src="/Ćwiczenia BEM/images/logo.png"
+          alt="bitcoin logo"
+        />
+        <h1 class="nav__name-company">Crypto News</h1>
+
+        <div class="nav__news">
+          <a href="/Ćwiczenia BEM/index.html" class="nav__title" id="news"
+            >Home
+          </a>
+          <a
+            href="/Ćwiczenia BEM/Articule/articule-all..html"
+            class="nav__title"
+            id="news"
+            >News
+          </a>
+          <a href="market.html" class="nav__title" id="news">Market Price </a>
+          <a
+            href="/Ćwiczenia BEM/Portfolio/portfolio.html"
+            class="nav__title"
+            id="news"
+            >Portfolio</a
+          >
+        </div>
+        <i id="nav__mode" class="fa-solid fa-moon"></i>
+        <i id="nav__mode" class="fa-solid fa-sun"></i>
+      </nav>
+      <main class="mid">
+        <div class="mid__convert">
+          <h1 class="mid__text">Convert Crypto</h1>
+          <i class="fa-solid fa-arrows-rotate" id="arrow-rotate"></i>
+          <div class="mid__convert-choice">
+            <label for="mid__coin" class="mid__container">
+              <select name="coin" id="coin" class="mid__coin-pick">
+                <input
+                  type="number"
+                  class="mid__coin-input"
+                  id="quantity-crypto"
+                />
+              </select>
+
+              <!-- <div class="active"></div> -->
+            </label>
+            <label class="mid__container" id="fiats">
+              <select name="currency" id="currency" class="mid__coin-pick">
+                <input
+                  type="number"
+                  class="mid__coin-input"
+                  id="quantity-money"
+                />
+              </select>
+            </label>
+          </div>
+
+          <button class="mid__btn" id="covert-button">Convert</button>
+        </div>
+
+        <h1 class="mid__text">Most Popular Crypto</h1>
+
+        <div class="mid__place">
+          <div class="mid__menu">
+            <label class="mid__search"
+              ><input
+                class="mid__search-input"
+                id="search-crypto"
+                type="text"
+                placeholder="search"
+            /></label>
+          </div>
+          <div class="mid__coins" id="all-crypto"></div>
+        </div>
+      </main>
+    </div>
+    <footer class="copyright">
+      <span class="copyright__text"
+        >Terms of services and Privacy policy © Crypto News 2016 - 2022</span
+      >
+    </footer>
+    <script src="/Ćwiczenia BEM/Market/martket.js"></script>
+  </body>
+</html>
+<!-- <script src="https://kit.fontawesome.com/ea0df8c89b.js" crossorigin="anonymous"></script> -->

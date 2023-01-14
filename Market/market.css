@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: "roboto";
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: royalblue;
+  border: 2px solid black;
+}
+
+.nav__logo {
+  width: 4vw;
+}
+
+.nav__name-company {
+  font-size: bold;
+  color: rgb(239, 235, 235);
+  /* opacity: 0.9; */
+}
+
+.nav__news {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+}
+
+.nav__title {
+  font-size: 1.5rem;
+  color: rgb(242, 234, 234);
+  /* opacity: 0.8; */
+  margin: 5%;
+  /* margin-left: 10%; */
+  /* text-align: center; */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.nav__title:hover {
+  color: orange;
+}
+
+.nav__search {
+  height: 50px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.nav__search:hover,
+.fa-solid:hover {
+  opacity: 0.6;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid__convert {
+  position: relative;
+  margin: 2%;
+  text-align: center;
+  width: 35vw;
+  height: 25vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.mid__convert-choice {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+.mid__container {
+  display: flex;
+  margin: 0 2%;
+}
+
+.mid__coin-pick {
+  padding: 3%;
+  text-align: center;
+  border: 2px solid #253136;
+
+  cursor: pointer;
+
+  z-index: 99;
+}
+
+.mid__coin-list {
+  width: 100%;
+  margin: 10%;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+.mid__coin-input {
+  margin: 2%;
+  width: 10vw;
+  font-size: 2rem;
+}
+
+.mid__btn {
+  padding: 2% 3%;
+  margin: 2%;
+}
+
+.mid__text {
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+}
+
+.fa-solid {
+  margin: 2%;
+  font-size: 1.5rem;
+}
+
+.mid__place {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mid__menu {
+  width: 100%;
+  text-align: center;
+}
+
+.mid__search-input {
+  height: 2vw;
+  width: 14vw;
+  font-size: 150%;
+  margin-bottom: 1vh;
+  border: 1px solid black;
+}
+
+.mid__coins {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.mid__crypto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5%;
+
+  margin: 2% 0;
+  width: 100%;
+  height: 10%;
+}
+
+.mid__icon {
+  margin-left: 2%;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.mid__crypto-name {
+  font-size: 1.5rem;
+  width: 15%;
+}
+
+.mid__shortcut {
+  width: 10%;
+}
+
+.mid__crypto-price {
+  font-size: 1.5rem;
+  width: 5%;
+  margin-right: 10%;
+}
+
+.mid__percent {
+  font-size: 1.5rem;
+  width: 5%;
+  margin: 0 3%;
+}
+
+.copyright {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: #253136;
+  margin-top: 2%;
+}
+
+.copyright__text {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dark Mode */
+
+.fa-sun {
+  display: none;
+}
+
+.activeMode {
+  color: #00ff7b;
+  background: #121212;
+}
+
+/* Media Queries */
+
+/* 1920x1080 */
+
+@media screen and (max-width: 1980px) {
+  .mid__convert {
+    height: 30vh;
+    width: 40vw;
+  }
+
+  .mid__coins {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .mid__convert {
+    height: 34vh;
+    width: 45vw;
+  }
+  .mid__coins {
+    width: 55vw;
+  }
+
+  .mid__search-input {
+    height: 2.5vw;
+  }
+}
